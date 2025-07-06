@@ -1,0 +1,30 @@
+touch bash2.txt
+cd
+mkdir "test 3"
+
+printf "row1\nrow2\nrow3\nrow4\n" > "test 3/4"
+printf "row1\nrow2\nrow3\nrow4\n" > "test 3/5"
+printf "row1\nrow2\nrow3\nrow4\n" > "test 3/6"
+
+grep "row2" "test 3/5"
+grep "row" "test 3"/*
+grep -c "row" "test 3/6"
+find "test 3" -name 5
+find "test 3" -name 5 -exec rm {} \;
+echo "test" > "test 3/4"
+sed -i 's/test/fail/g' "test 3/4"
+echo "test" >> "test 3/4"
+ps aux
+kill 666
+ping rusau.net
+ping -c 5 rusau.net
+curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available,pending,sold"
+
+curl -X POST "https://petstore.swagger.io/v2/user" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "id": 123,
+           "username": "new",
+           "email": "newuser@example.com",
+           "password": "password123"
+         }'
